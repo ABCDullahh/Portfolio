@@ -2,6 +2,7 @@
 
 /* Variable CSS */
 :root {
+  
   --header-height: 3rem;
   /* Colors */
   --hue: 0;
@@ -13,7 +14,7 @@
   --container-color: #fff;
 
   /* font */
-  --body-font: "Poppins", sans-serif
+  --body-font: "Poppins", sans-serif;
 
   /* sizing */
   --big-font-size: 3.5rem;
@@ -109,29 +110,31 @@ img {
 
 /* cssclasses */
 .section {
-  padding: 6rem 0 2 rem;
+  padding: 6rem 0 2rem;
 }
 
-.section_title {
-  font-size: var(--h1-font-size);
-  color: var(--title-color);
-}
-
-.section_subtitle {
+.section__subtitle {
   display: block;
   font-size: var(--small-font-size);
   margin-bottom: 4rem;
 }
 
-.section_title,
-.section_subtitle {
+.section__title {
+  font-size: var(--h1-font-size);
+  color: var(--title-color);
+}
+
+
+
+.section__title,
+.section__subtitle {
   text-align: center;
 }
 
 
 /* layout */
 .container {
-  max-width: 968;
+  max-width: 968px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -156,7 +159,7 @@ img {
   background-color: var(--title-color-dark);
 }
 
-.button_icon {
+.button__icon {
   margin-left: var(--mb-0-5);
 }
 
