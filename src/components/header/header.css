@@ -54,7 +54,7 @@
 /* BP */
 
 /* for medium devices */
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
     .header {
         top: initial;
         bottom: 0;
@@ -65,7 +65,7 @@
 
     .nav__menu {
         position: fixed;
-        bottom: 0;
+        bottom: -100%;
         left: 0;
         width: 100%;
         background-color: var(--body-color);
@@ -73,6 +73,17 @@
         box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
         border-radius: 1.5rem 1.5rem 0 0;
         transition: .3s;
+    }
+
+    /* show menu */
+    .show-menu {
+        bottom: 0;
+    }
+
+    .nav__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
     }
 
     .nav__icon {
@@ -92,11 +103,11 @@
         color: var(--title-color-dark)
     }
 
-    .nav__list {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 2rem;
+    .nav__toggle {
+        font-size: 1.1rem;
+        cursor: pointer;
     }
+
 
     .nav__icon,
     .nav__close,
@@ -107,5 +118,12 @@
 
 
 /* for small devices */
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 350px) {
+    .nav__menu {
+        padding: 2rem 0.25rem 4rem;
+    }
+
+    .nav__list {
+        column-gap: 0;
+    }
 }
