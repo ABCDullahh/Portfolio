@@ -186,6 +186,9 @@ img {
 }
 /* for medium devices */
 @media screen and (max-width: 768) {
+  .section {
+    padding: 2rem 0 4rem;
+  }
 }
 
 @media screen and (max-width: 576) {
@@ -193,6 +196,10 @@ img {
 
 /* small devices */
 @media screen and (max-width: 350) {
+  :root {
+    --big-font-size: 2.25rem;
+  }
+  
   .container {
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
